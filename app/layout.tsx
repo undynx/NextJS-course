@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Header from "./components/Header/Header";
+
 import './globals.scss'
-import Header from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "CoderApp",
+  title: "ECOmarket",
   description: "NextJS application for the Coderhouse course",
 };
 
