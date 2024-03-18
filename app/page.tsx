@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>NextJS Course</h1>
+      <h2>NextJS Course</h2>
     </main>
   );
 }
