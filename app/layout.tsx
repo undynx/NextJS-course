@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import './globals.scss'
 
 export const metadata: Metadata = {
-  title: "ECOmarket",
+  title: "Capellari Muebles",
   description: "NextJS application for the Coderhouse course",
 };
 
