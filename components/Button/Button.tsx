@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { classnames } from '@app/utils/helpers';
+import { classnames } from '@utils/helpers';
 
 import styles from './Button.module.scss';
-import '../../globals.scss'
+import '@app/globals.scss'
 
 type ButtonProps = {
   onClick?: () => void,

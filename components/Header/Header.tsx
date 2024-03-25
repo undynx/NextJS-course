@@ -1,28 +1,29 @@
 'use client';
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 
-import Button from '../Button/Button';
+import Button from '@components/Button/Button';
+import Navbar from '@components/Navbar/Navbar';
 
 import logoSVG from '@assets/icons/logo.svg';
 import menuSVG from '@assets/icons/menu.svg';
-import Navbar from '../Navbar/Navbar';
+import Link from 'next/link';
 
 const Header = () => {
-  const [openNavbar, setOpenNavbar] = useState(true);
-  useEffect(() => {
-    console.log(openNavbar)
-  }, [openNavbar])
+  const [openNavbar, setOpenNavbar] = useState(false);
+
   return (
     <>
-      <div className="bg-pink-100 p-4 flex items-center justify-between">
+      <div className="bg-blue-100 p-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Image
-            src={logoSVG}
-            width={50}
-            alt=""
-          />
+          <Link href='/'>
+            <Image
+              src={logoSVG}
+              width={50}
+              alt=""
+            />
+          </Link>
           <h1 className="pl-2">Capellari Muebles</h1>
         </div>
         <div>

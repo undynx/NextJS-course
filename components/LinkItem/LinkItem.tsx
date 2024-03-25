@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export type LinkType = {
   redirect: string,
@@ -9,19 +10,20 @@ export type LinkType = {
 
 type LinkItemProps = {
   linkItem: LinkType,
+  onClick?: () => void,
 }
 
-const LinkItem = ({ linkItem }: LinkItemProps) => {
+const LinkItem = ({ linkItem, onClick }: LinkItemProps) => {
   const { redirect, title, icon } = linkItem;
   return (
-    <div className="flex items-center py-4">
+    <Link href={redirect} className="flex items-center py-4" onClick={onClick}>
       <Image
         src={icon}
         width={40}
         alt=""
       />
       <span className="pl-2">{title}</span>
-    </div>
+    </Link>
   )
 }
 
