@@ -8,7 +8,7 @@ type ProductListProps = {
 const ProductList = ({ productos }: ProductListProps) => {
   return (
     <div className='flex flex-wrap'>
-      {productos.map((producto) => <ProductCard producto={producto} />)}
+      {productos.map((producto) => <ProductCard key={producto.id} producto={producto} />)}
     </div>
   )
 }

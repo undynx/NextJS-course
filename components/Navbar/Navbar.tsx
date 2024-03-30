@@ -48,6 +48,7 @@ const Navbar = ({ isOpen, onClose }: NavbarProps) => {
     <>
       <motion.div
         variants={variants}
+        initial={"closed"}
         animate={ isOpen ? "opened" : "closed" }
         transition={{ duration: 0.3 }}
         className="w-72 min-h-screen fixed top-0 right-0 bg-base-color p-8 z-10"
