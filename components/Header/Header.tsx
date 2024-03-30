@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-blue-100 p-4 flex items-center justify-between">
+      <div className="bg-base-color p-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link href='/'>
             <Image

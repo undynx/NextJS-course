@@ -4,6 +4,12 @@ type ClassnameObject = {
 
 type Classname = ClassnameObject | string;
 
+const capitalize = (value: string) => {
+  if (!value) return value;
+
+  return value.charAt(0).toUpperCase() + value.slice(1);
+};
+
 function classnames(...args: Classname[]): string {
   if (args.length === 1) {
     const [firstEntry] = args;
@@ -19,5 +25,6 @@ function classnames(...args: Classname[]): string {
 }
 
 export {
+  capitalize,
   classnames
 };

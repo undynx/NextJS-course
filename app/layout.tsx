@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className='bg-background-color'>
         <Header />
-        {children}
+        <div className="py-6 px-10">{children}</div>
       </body>
     </html>
   );
