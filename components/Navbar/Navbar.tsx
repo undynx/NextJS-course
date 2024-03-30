@@ -9,6 +9,7 @@ import nosotrosSVG from '@assets/icons/nosotros.svg';
 import contactoSVG from '@assets/icons/message.svg';
 import cartSVG from '@assets/icons/cart.svg'
 import closeSVG from '@assets/icons/close.svg';
+import adminSVG from '@assets/icons/admin.svg';
 
 type NavbarProps = {
   isOpen: boolean,
@@ -40,6 +41,11 @@ const links: LinkType[] = [
     redirect: '/contacto',
     title: 'Contacto',
     icon: contactoSVG,
+  },
+  {
+    redirect: '/admin',
+    title: 'Admin',
+    icon: adminSVG,
   },
 ]
 

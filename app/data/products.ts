@@ -88,20 +88,20 @@ export const mockedData: Producto[] = [
         titulo: 'Toallero de Pared de Acero Inoxidable',
         descripcion: 'Toallero de pared con diseño moderno y resistente al agua.',
         precio: 30,
-        categoria: 'Baño '
+        categoria: 'Baño'
     },
     {
         id: '14',
         titulo: 'Juego de Baño  de Cerámica',
         descripcion: 'Juego de 4 piezas de Baño  de cerámica con diseño elegante.',
         precio: 40,
-        categoria: 'Baño '
+        categoria: 'Baño'
     },
     {
         id: '15',
         titulo: 'Espejo de Aumento con Luz LED',
         descripcion: 'Espejo de aumento con luz LED para un maquillaje preciso.',
         precio: 25,
-        categoria: 'Baño '
+        categoria: 'Baño'
     }
 ];
