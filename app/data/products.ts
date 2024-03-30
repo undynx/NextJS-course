@@ -1,13 +1,3 @@
-type Categorias = 'Sala' | 'Dormitorio' | 'Cocina' | 'Baño ';
-
-interface Producto {
-    id: string;
-    titulo: string;
-    descripcion: string;
-    precio: number;
-    categoria: Categorias;
-}
-
 export const mockedData: Producto[] = [
     {
         id: '1',

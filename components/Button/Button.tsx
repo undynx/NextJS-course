@@ -8,7 +8,7 @@ import '@app/globals.scss'
 type ButtonProps = {
   onClick?: () => void,
   className?: string,
-  children: React.ReactElement,
+  children: React.ReactElement | string,
 }
 
 const Button = ({ onClick, className = '', children }: ButtonProps) => {
